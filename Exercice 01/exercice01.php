@@ -15,7 +15,7 @@
         <li>Cerise</li>
         <li>Abricot</li>
         <li>Banane</li>
-    </ul>'
+    </ul>';
     ?>
     </body>
 </html>
