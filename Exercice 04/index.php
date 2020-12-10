@@ -9,10 +9,19 @@
     <body>
     <ul>
         <?php
-            $i = 1;
-            while($i<=5000){
-                echo '<li>'.$i.'</li>';
-                $i++;
+            $i = 0;
+            while($i<5000){
+
+                echo '<li>'.++$i.'</li>';
+
+                //2em methode
+                //echo '<li>'.($i+1).'</li>';
+                //i++
+
+                //3em methode
+                //i++
+                //echo '<li>'.$i.'</li>';
+
             }
         ?>
     </ul>
