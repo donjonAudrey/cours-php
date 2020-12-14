@@ -8,7 +8,6 @@ $userInfos = [
     'numberPets'=> 'un',
 ];
 ?>
-
 <!DOCTYPE html>
 <html lang="fr">
     <head>
