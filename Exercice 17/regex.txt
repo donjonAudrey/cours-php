@@ -1,0 +1,23 @@
+Exercice sur les expressions régulières. Les réponses possibles sont soit TRUE, soit FALSE
+
+"Le chat est dans l'arbre"				/chat/					Résultat: true
+"L'arbre n'est pas sur le chat"			/chien/					Résultat: false
+"Le chien mange des croquettes"			/Chien/					Résultat: false
+"La pomme est rouge"					/POMME/i				Résultat: true
+"La banane est jaune"					/banane|orange/			Résultat: true
+"Le chat est dans l'arbre"				/^chat/					Résultat: false
+"L'arbre n'est pas sur le chat"			/chat$/					Résultat: true
+"Le chien mange des croquettes!"		/croquettes$/			Résultat: false
+"La pomme et la poire sont des fruits"	/po[ufi]re/				Résultat: true
+"La pomme est rouge"					/[aeiouy]$/				Résultat: true
+"La banane est jaune"					/^[le]$/i				Résultat: true  ----> false / vrai si il y avait seulement "l" ou "e"
+"Le chat est dans l'arbre 4"			/^[0-9]/				Résultat: false
+"L'arbre n'est pas sur le chat"			/[A-Z0-9]$/				Résultat: false
+"Le chien mange des croquettes"			/[^a-z]/i				Résultat: true  ----> caractère espace qui ne fait pas partie de l'exclusion [a-z]
+"La pomme est rouge"					/z?/					Résultat: true
+"La banane est jaune"					/[na]+/					Résultat: true
+"Le chat est dans l'arbre"				/^[a-z0-9]{0,50}$/i		Résultat: true  ----> false car présence des espaces et apostrophe
+"1480"									/[0-9]{3}$/				Résultat: true
+"45T140"								/^[0-9]{3}/				Résultat: false
+"blablablabla"							/^(bla){4}$/			Résultat: true
+"La pomme et la poire sont des fruits"	/^.+$/					Résultat: true
