@@ -67,7 +67,6 @@ if (isset($_POST['email']) &&
             }
         }
         //Si la variable $successMsg existe, alors on l'affiche, sinon on affiche le formulaire dans le else
-
         if (isset($successMsg)){
             echo '<p class="valid">' . $successMsg . '</p>';
         }else{
